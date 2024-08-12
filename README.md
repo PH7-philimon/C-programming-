@@ -1,15 +1,31 @@
-# C-programming-
-https://github.com/PH7-philimon/C-programming-.git
+# C-programming
 #include <stdio.h>
 
 int main() {
-    int i;
-    for (i = 1; i <= 10; i++) {
-        if (i == 5) {
-            break; // Exit the loop when i is 5
-        }
-        printf("%d ", i);
+    char grade;
+
+    printf("Enter your grade: ");
+    scanf("%c", &grade);
+
+    switch (grade) {
+        case 'A':
+            printf("Excellent!\n");
+            break;
+        case 'B':
+            printf("Good job!\n");
+            break;
+        case 'C':
+            printf("Average.\n");
+            break;
+        case 'D':
+            printf("Needs improvement.\n");
+            break;
+        case 'F':
+            printf("Failed.\n");
+            break;
+        default:
+            printf("Invalid grade.\n");
     }
-    printf("\nLoop terminated.\n");
+
     return 0;
 }
